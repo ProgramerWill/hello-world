@@ -1,7 +1,10 @@
-# hello-world
-explore my first github project.
 
-# 20181226 Tues, Xi'an
+# hello world project
+
+   my first github project.
+
+---
+### 20181226 Tues, Xi'an
 
 today is the birthday of Chiarman Mao, it's a big day. And in this day, I am exploring my git project on archlinux platform.
 the issue I have met.
@@ -10,3 +13,6 @@ the issue I have met.
 3. network configration : pacman to install NetworkManager package.
 4. to support chinese. 
 
+---
+
+### 
