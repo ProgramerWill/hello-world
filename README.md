@@ -4,6 +4,17 @@
    my first github project.
 
 ---
+### 20190129 Mon, Xi'an
+   Today, I fixed the issues of my archlinux after last pacman -Syu update.
+   two libraries are missed(libreadline.so.7 and libidn2.so.0) by the beneath steps,
+   1. boot with kernel parameters systemd.unit=multi-user.target
+   2. goes to /var/cache/pacman/pkg/ and exatrac the missed two libraries from readline.* and libidn2.*
+   3. cp the lib to /usr/lib, and make two soft symbolic links.
+   4. telinit 5, goes to Xwindow mode.
+   
+
+
+
 ### 20181226 Tues, Xi'an
 
 today is the birthday of Chiarman Mao, it's a big day. And in this day, I am exploring my git project on archlinux platform.
