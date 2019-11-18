@@ -4,6 +4,12 @@
    my first github project.
 
 ---
+### 20191118 Mon, Kista
+   how to query the archlinux startup command line
+$ cat /proc/cmdline
+BOOT_IMAGE=/vmlinuz-linux root=UUID=c4b1bb3d-2a51-4764-a7e9-c161a83889c2 rw loglevel=3 quiet
+
+
 ### 20190129 Mon, Xi'an
    Today, I fixed the issues of my archlinux after last pacman -Syu update.
    two libraries are missed(libreadline.so.7 and libidn2.so.0) by the beneath steps,
