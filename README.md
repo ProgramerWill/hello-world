@@ -1,7 +1,13 @@
-
 # hello world project
 
    my first github project.
+
+### 20201209 Wed, Solna
+   I just start to use git again. 
+   I have set up a kali linux PC just to learn how to make penertration test.
+Network security is very important.
+   Even for my Kali server just built there are a lot of attempt to connect my sshd server.
+   I can use sudo lastb -n 30 to check the attempting IPs.
 
 ---
 ### 20191118 Mon, Kista
