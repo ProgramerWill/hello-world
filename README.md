@@ -2,6 +2,31 @@
 
    my first github project.
 
+### 20201210 Thu, Kista
+   Try to make a ssh tunnel between linux in office and linux at home.
+    office linux : 
+    ssh -R 8080:localhost:22 ssh://wyy.changeip.org:10022
+    then at home linux, we can see,
+    home linux will listen 8080(http-alt) port and will forward any connect to this port to 
+    the office linux 22 port, it's a connect to ssh again. 
+    Then we can see
+      office linux ssh A --> home linux --> home linux new ssh to local 8080 port --> through ssh A to office linux
+      22 port ---> home linux connect to office linux ssh server and build ssh B.
+      
+    It's quite interest, isn't it?
+
+    └─$ ss -ta
+State          Recv-Q      Send-Q           Local Address:Port                Peer Address:Port          Process      
+LISTEN         0           128                  127.0.0.1:http-alt                 0.0.0.0:*                          
+LISTEN         0           128                    0.0.0.0:ssh                      0.0.0.0:*                          
+ESTAB          0           0                192.168.0.100:ssh                62.119.167.46:2058                       
+ESTAB          0           96               192.168.0.100:ssh                62.119.167.46:2060                       
+LISTEN         0           128                      [::1]:http-alt                    [::]:*                          
+LISTEN         0           128                       [::]:ssh                         [::]:*                          
+TIME-WAIT      0           0                        [::1]:52172                      [::1]:http-alt
+
+
+
 ### 20201209 Wed, Solna
    I just start to use git again. 
    I have set up a kali linux PC just to learn how to make penertration test.
