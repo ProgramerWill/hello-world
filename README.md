@@ -4,6 +4,8 @@
 
 ### 20210320 Sat, Solna
 
+https://kifarunix.com/how-to-setup-squid-proxy-basic-authentication-with-username-and-password/
+
 how to config squid authentication.
 
 Configure Squid Proxy Authentication
@@ -14,7 +16,6 @@ auth_param basic children 5
 auth_param basic realm Proxy Authentication Required
 auth_param basic credentialsttl 2 hours
 auth_param basic casesensitive off
-
 acl auth_users proxy_auth amos john
 http_access allow auth_users
 
