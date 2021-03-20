@@ -2,6 +2,23 @@
 
    my first github project.
 
+### 20210320 Sat, Solna
+
+how to config squid authentication.
+
+Configure Squid Proxy Authentication
+Since all seems fine, proceed to setup squid proxy basic authentication. Open the squid configuration file for editing and add the following lines.
+
+auth_param basic program /usr/lib64/squid/basic_ncsa_auth /etc/squid/.squid_users
+auth_param basic children 5
+auth_param basic realm Proxy Authentication Required
+auth_param basic credentialsttl 2 hours
+auth_param basic casesensitive off
+
+acl auth_users proxy_auth amos john
+http_access allow auth_users
+
+
 ### 20201210 Thu, Kista
    Try to make a ssh tunnel between linux in office and linux at home.
     office linux : 
